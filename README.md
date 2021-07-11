@@ -12,17 +12,28 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a serverless function 
 
 ## Getting started
 
-1. Clone this repo into a new directory:
+### Quickstart
+
+Deploy to Vercel
+
+1. [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmikesprague%2Freact-tailwindcss-vercel-starter&env=FONT_AWESOME_TOKEN)
+
+### Manual Setup
+
+1. Clone this repo into a new directory:<br>
    `git clone https://github.com/mikesprague/react-tailwindcss-vercel-starter.git your-project-name`
-1. Go into the new directory:
+2. Go into the new directory:<br>
    `cd your-project-name`
-1. Remove the `.git` folder from this source repo:
+3. Remove the `.git` folder from this source repo:<br>
    `rm -rf .git`
-1. Inistantiate a new git repo for your project:
-   `git init`
-1. Install project dependencies:
+4. Inistantiate a new git repo for your project and these files:<br>
+   `git init && git add . && git commit -m "Initial commit"`
+
+### Local Development
+
+1. Install project dependencies:<br>
    `yarn`
-1. Run the project locally (build React front-end and serverless functions and serves them at `http://localhost:3000`):
+1. Run the project locally (build React front-end and serverless functions and serves them at `http://localhost:3000`):<br>
    `yarn start`
 
 ## License
