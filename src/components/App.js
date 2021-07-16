@@ -1,12 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { initIcons } from '../modules/helpers';
+import { FaQuoteLeft, FaGithub } from 'react-icons/fa';
 import './App.scss';
 
 export default function App() {
-  initIcons();
-
   const [data, setData] = useState(null);
   useEffect(() => {
     const getRemoteData = async () => {
@@ -35,8 +32,8 @@ export default function App() {
         <blockquote className="mx-auto text-3xl italic leading-normal text-center text-blue-200">
           {data ? (
             <>
-              <FontAwesomeIcon icon="quote-left" fixedWidth />
-              {data.joke}
+              <FaQuoteLeft />
+              {` ${data.joke}`}
             </>
           ) : (
             '... loading dad joke ...'
@@ -45,8 +42,8 @@ export default function App() {
       </div>
       <div className="fixed min-w-full text-base text-center bottom-2">
         <a href="https://github.com/mikesprague/react-tailwindcss-vercel-starter">
-          <FontAwesomeIcon icon={['fab', 'github']} fixedWidth />
-          Back to repo
+          <FaGithub />
+          {` Back to repo`}
         </a>
       </div>
     </>
