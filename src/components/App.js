@@ -1,17 +1,14 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useSWR from 'swr';
 import { FaQuoteLeft, FaGithub } from 'react-icons/fa';
 import './App.scss';
 
 export default function App() {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    const getRemoteData = async () => {
-      const remoteData = await axios.get('/api/sample-endpoint').then((response) => response.data);
-      setData(remoteData);
-    };
-    getRemoteData();
-  }, []);
+  const { data, error } = useSWR(
+    '/api/sample-endpoint',
+    axios.get('/api/sample-endpoint').then((response) => response.data),
+  );
 
   return (
     <>
@@ -30,7 +27,8 @@ export default function App() {
           </small>
         </h2>
         <blockquote className="mx-auto text-3xl italic leading-normal text-center text-blue-200">
-          {data ? (
+          {error ? `ERROR: ${error.message}` : ''}
+          {data && !error ? (
             <>
               <FaQuoteLeft />
               {` ${data.joke}`}
