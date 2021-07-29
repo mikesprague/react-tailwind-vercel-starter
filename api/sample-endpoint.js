@@ -14,5 +14,6 @@ module.exports = async (req, res) => {
       console.error(error);
       return res.status(500).json(error);
     });
+  res.setHeader('Cache-Control', 'max-age=600, s-maxage=600');
   return res.status(200).json(returnData);
 };
