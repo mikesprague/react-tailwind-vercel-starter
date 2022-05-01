@@ -4,6 +4,7 @@ module.exports = async (req, res) => {
   const apiUrl = 'https://icanhazdadjoke.com';
   const requestHeaders = {
     Accept: 'application/json',
+    'User-Agent': 'React Tailwind Vercel Starter Template (Example Serverless Function)',
   };
   const returnData = await axios
     .get(apiUrl, {
