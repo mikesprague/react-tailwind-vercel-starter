@@ -5,10 +5,12 @@ import { FaQuoteLeft, FaGithub } from 'react-icons/fa';
 import './App.scss';
 
 export default function App() {
-  const { data, error } = useSWR(
-    '/api/sample-endpoint',
-    axios.get('/api/sample-endpoint').then((response) => response.data),
-  );
+  const fetcher = async (url) => await axios.get(url).then((response) => response.data);
+  const { data, error } = useSWR('/api/sample-endpoint', fetcher, {
+    revalidateIfStale: false,
+    revalidateOnFocus: false,
+    revalidateOnReconnect: false,
+  });
 
   return (
     <>
