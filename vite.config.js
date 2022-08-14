@@ -13,6 +13,7 @@ export default defineConfig({
   outDir: './',
   server: {
     strictPort: true,
+    port: 3000,
   },
   plugins: [
     VitePWA({
