@@ -1,6 +1,6 @@
-const axios = require('axios').default;
+import axios from 'axios';
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   const apiUrl = 'https://icanhazdadjoke.com';
   const requestHeaders = {
     Accept: 'application/json',
@@ -13,8 +13,8 @@ module.exports = async (req, res) => {
     .then((response) => response.data)
     .catch((error) => {
       console.error(error);
-      return res.status(500).json(error);
+      res.status(500).json(error);
     });
   res.setHeader('Cache-Control', 'max-age=600, s-maxage=600');
-  return res.status(200).json(returnData);
+  res.status(200).json(returnData);
 };
