@@ -6,9 +6,9 @@ My basic project starter for [Vercel](https://vercel.com) hosted projects.
 
 Sets up a barebones React/Tailwind CSS PWA front-end with a serverless function that can be used as an API on the back-end.
 
-- React 17.x
-- Tailwind CSS 2.x
-- Webpack 5.x
+- React
+- Tailwind CSS
+- Vite
 
 ## Getting started
 
@@ -32,9 +32,9 @@ Deploy to Vercel
 ### Local Development
 
 1. Install project dependencies:<br>
-   `yarn`
+   `npm install`
 1. Run the project locally (build React front-end and serverless functions and serves them at `http://localhost:3000`):<br>
-   `yarn start`
+   `npm start`
 
 ## License
 
