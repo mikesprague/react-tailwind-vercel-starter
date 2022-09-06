@@ -40,10 +40,10 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.18.9",
     "@babel/eslint-plugin": "7.18.10",
-    "@babel/preset-env": "7.18.10",
+    "@babel/preset-env": "7.19.0",
     "@fullhuman/postcss-purgecss": "4.1.3",
     "@tailwindcss/typography": "0.5.7",
-    "@vitejs/plugin-react": "2.0.1",
+    "@vitejs/plugin-react": "2.1.0",
     "autoprefixer": "10.4.8",
     "babel-plugin-add-react-displayname": "0.0.5",
     "cssnano": "5.1.13",
@@ -56,7 +56,7 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-markdown": "3.0.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.31.2",
+    "eslint-plugin-react": "7.31.7",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-security": "1.5.0",
     "postcss": "8.4.16",
@@ -73,9 +73,9 @@
     "stylelint-prettier": "2.0.0",
     "tailwindcss": "3.1.8",
     "vercel": "28.2.2",
-    "vite": "3.0.9",
+    "vite": "3.1.0",
     "vite-plugin-html": "3.2.0",
-    "vite-plugin-pwa": "0.12.6"
+    "vite-plugin-pwa": "0.12.7"
   },
   "babel": {
     "plugins": [
