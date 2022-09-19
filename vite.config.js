@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   root: 'src',
   build: {
-    // Relative to the root
     outDir: '../dist',
   },
   publicDir: '../public',
@@ -15,6 +14,7 @@ export default defineConfig({
     strictPort: true,
     port: 3000,
   },
+  appType: 'custom',
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
