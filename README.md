@@ -10,6 +10,8 @@ Sets up a barebones React/Tailwind CSS PWA front-end with a serverless function 
 - Tailwind CSS
 - Vite
 
+Lighthouse scores (rebuilt every 6 hours): <https://mikesprague.github.io/react-tailwindcss-vercel-starter/lighthouse-report.html>
+
 ## Getting started
 
 ### Quickstart
