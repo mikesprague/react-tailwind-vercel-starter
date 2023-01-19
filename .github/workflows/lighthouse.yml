@@ -43,7 +43,7 @@ jobs:
         run: cd ${{ github.workspace }}/tmp/artifacts && for x in *.html;do mv $x ${{env.HTML_FILE_NAME }};done
       
       - name: 🛠️ Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
       
       - name: 🏗️ Create and Upload artifact
         uses: actions/upload-pages-artifact@v1
