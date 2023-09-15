@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  URL_TO_CHECK: "https://react-tailwindcss-vercel-starter.vercel.app"
+  URL_TO_CHECK: "https://react-tailwind-vercel-starter.vercel.app"
   HTML_FILE_NAME: "lighthouse-report.html"
 
 jobs:
@@ -24,4 +24,5 @@ jobs:
     secrets:
       REPO_TOKEN: ${{ secrets.GITHUB_TOKEN}}
     with:
-      url: https://react-tailwindcss-vercel-starter.vercel.app
+      url: https://react-tailwind-vercel-starter.vercel.app
+
