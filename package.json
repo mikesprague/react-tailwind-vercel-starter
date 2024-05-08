@@ -29,7 +29,7 @@
     "@tippyjs/react": "4.2.6",
     "axios": "1.6.8",
     "cross-env": "7.0.3",
-    "daisyui": "4.10.5",
+    "daisyui": "4.11.1",
     "dayjs": "1.11.11",
     "dotenv": "16.4.5",
     "prop-types": "15.8.1",
