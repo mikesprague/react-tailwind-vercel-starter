@@ -4,8 +4,8 @@
   "description": "Template for a barebones Vercel hosted React/Tailwind CSS PWA with an API endpoint powered by a serverless function",
   "private": true,
   "engines": {
-    "node": ">= 18.x",
-    "npm": ">= 8.x"
+    "node": ">= 20.x",
+    "npm": ">= 10.x"
   },
   "type": "module",
   "scripts": {
