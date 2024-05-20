@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@tippyjs/react": "4.2.6",
-    "axios": "1.6.8",
+    "axios": "1.7.1",
     "cross-env": "7.0.3",
     "daisyui": "4.11.1",
     "dayjs": "1.11.11",
