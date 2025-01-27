@@ -1,16 +1,14 @@
-import axios from 'axios';
-
 export default async (req, res) => {
   const apiUrl = 'https://icanhazdadjoke.com';
   const requestHeaders = {
     Accept: 'application/json',
-    'User-Agent': 'React Tailwind Vercel Starter Template (Example Serverless Function)',
+    'User-Agent':
+      'React Tailwind Vercel Starter Template (Example Serverless Function)',
   };
-  const returnData = await axios
-    .get(apiUrl, {
-      headers: requestHeaders,
-    })
-    .then((response) => response.data)
+  const returnData = await fetch(apiUrl, {
+    headers: requestHeaders,
+  })
+    .then((response) => response.json())
     .catch((error) => {
       console.error(error);
       res.status(500).json(error);
