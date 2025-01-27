@@ -1,7 +1,7 @@
 module.exports = {
-  extends: ['stylelint-config-standard-scss', 'stylelint-config-standard'],
+  extends: ['stylelint-config-standard'],
   rules: {
-    'scss/at-rule-no-unknown': [
+    'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
@@ -16,6 +16,5 @@ module.exports = {
     'declaration-block-trailing-semicolon': null,
     'no-descending-specificity': null,
     'no-empty-source': null,
-    'at-rule-no-unknown': null,
   },
 };

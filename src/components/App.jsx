@@ -1,12 +1,9 @@
-import axios from 'axios';
 import React from 'react';
 import { FaGithub, FaQuoteLeft } from 'react-icons/fa';
 import useSWR from 'swr';
-import './App.scss';
 
 export default function App() {
-  const fetcher = async (url) =>
-    await axios.get(url).then((response) => response.data);
+  const fetcher = async (url) => await fetch(url).then((res) => res.json());
 
   const { data, error } = useSWR('/api/sample-endpoint', fetcher, {
     revalidateIfStale: false,
@@ -26,7 +23,7 @@ export default function App() {
               {error ? `ERROR: ${error.message}` : ''}
               {data && !error ? (
                 <>
-                  <FaQuoteLeft />
+                  <FaQuoteLeft className="inline mr-1 mb-2" />
                   {` ${data.joke}`}
                 </>
               ) : (
@@ -49,7 +46,7 @@ export default function App() {
       </div>
       <div className="fixed min-w-full text-base text-center bottom-2">
         <a href="https://github.com/mikesprague/react-tailwindcss-vercel-starter">
-          <FaGithub />
+          <FaGithub className="inline" />
           {' Back to repo'}
         </a>
       </div>
