@@ -43,7 +43,7 @@
     "@tailwindcss/typography": "0.5.16",
     "@vitejs/plugin-react-swc": "3.10.2",
     "cz-git": "1.11.2",
-    "stylelint": "16.21.0",
+    "stylelint": "16.21.1",
     "stylelint-config-standard": "38.0.0",
     "tailwindcss": "4.1.11",
     "vercel": "44.2.8",
