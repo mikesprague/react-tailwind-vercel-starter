@@ -31,7 +31,7 @@
     "cross-env": "10.0.0",
     "daisyui": "5.1.6",
     "dayjs": "1.11.18",
-    "dotenv": "17.2.1",
+    "dotenv": "17.2.2",
     "prop-types": "15.8.1",
     "react": "19.1.1",
     "react-dom": "19.1.1",
