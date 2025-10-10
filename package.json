@@ -29,7 +29,7 @@
     "@tailwindcss/vite": "4.1.14",
     "@tippyjs/react": "4.2.6",
     "cross-env": "10.1.0",
-    "daisyui": "5.1.29",
+    "daisyui": "5.1.31",
     "dayjs": "1.11.18",
     "dotenv": "17.2.3",
     "prop-types": "15.8.1",
