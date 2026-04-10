@@ -39,7 +39,7 @@
     "swr": "2.4.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.10",
+    "@biomejs/biome": "2.4.11",
     "@tailwindcss/typography": "0.5.19",
     "@tailwindcss/vite": "4.2.2",
     "@vitejs/plugin-react": "6.0.1",
