@@ -10,7 +10,6 @@ export default defineConfig({
   },
   publicDir: '../public',
   base: './',
-  outDir: './',
   server: {
     strictPort: true,
     port: 3000,
@@ -22,8 +21,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
     }),
     react({
-      // Use React plugin in all *.jsx and *.tsx files
-      include: '**/*.{jsx,tsx}',
+      // Use React plugin in all *.tsx files
+      include: 'src/**/*.tsx',
     }),
   ],
 });
