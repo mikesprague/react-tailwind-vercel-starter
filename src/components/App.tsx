@@ -13,13 +13,13 @@ export default function App() {
 
   return (
     <>
-      <div className='hero min-h-screen bg-base-200'>
-        <div className='hero-content text-center'>
+      <div className='min-h-screen'>
+        <div className='text-center flex items-center justify-center min-h-screen'>
           <div className=''>
-            <h1 className='text-5xl font-bold'>
+            <h1 className='text-5xl font-bold text-primary'>
               React/Tailwind PWA Starter Template
             </h1>
-            <blockquote className='mx-auto text-3xl italic leading-normal text-center text-blue-200'>
+            <blockquote className='mx-auto text-3xl italic leading-normal text-center text-blue-400 mt-4 mb-6 max-w-7xl'>
               {error ? `ERROR: ${error.message}` : ''}
               {data && !error ? (
                 <>
@@ -30,7 +30,7 @@ export default function App() {
                 '... loading dad joke ...'
               )}
             </blockquote>
-            <h2 className='my-12 text-2xl font-semibold leading-tight text-center'>
+            <h2 className='my-12 text-2xl font-semibold leading-tight text-center text-gray-400'>
               <small className='text-base font-normal text-center'>
                 <a
                   href='https://icanhazdadjoke.com/api'
