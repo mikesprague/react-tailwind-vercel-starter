@@ -58,7 +58,7 @@
     "cssnano": "8.0.4",
     "cz-git": "1.13.1",
     "globals": "17.9.0",
-    "oxfmt": "0.62.0",
+    "oxfmt": "0.63.0",
     "oxlint": "1.77.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
