@@ -59,7 +59,7 @@
     "cz-git": "1.14.0",
     "globals": "17.11.0",
     "oxfmt": "0.64.0",
-    "oxlint": "1.79.0",
+    "oxlint": "1.80.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "vercel": "59.5.0",
