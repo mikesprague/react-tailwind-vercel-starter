@@ -62,7 +62,7 @@
     "oxlint": "1.88.0",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "vercel": "63.1.2",
+    "vercel": "64.3.1",
     "vite": "8.3.4",
     "vite-plugin-html": "3.2.2",
     "vite-plugin-pwa": "2.0.0"
