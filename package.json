@@ -60,7 +60,7 @@
     "globals": "17.14.0",
     "oxfmt": "0.77.0",
     "oxlint": "1.92.0",
-    "tailwindcss": "4.3.4",
+    "tailwindcss": "4.3.5",
     "typescript": "6.0.3",
     "vercel": "65.12.1",
     "vite": "8.3.6",
